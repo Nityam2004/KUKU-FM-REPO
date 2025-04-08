@@ -29,19 +29,4 @@ A fully automated end-to-end pipeline that converts raw scripts or podcast trans
 
 ---
 
-## ⚙️ Architecture
 
-```mermaid
-graph LR
-A[Input Script] --> B[Preprocessing & Tokenization]
-B --> C[Emotion Detection (BERT)]
-C --> D[Voice Synthesis (WaveNet)]
-C --> E[Prompt Extraction for Visuals]
-E --> F[Image Generation (DALL·E)]
-D --> G[Audio Output]
-F --> H[Visual Scenes]
-G --> I[Subtitle Generation]
-G --> J[Video Assembly (FFmpeg)]
-H --> J
-I --> J
-J --> K[Final Video Output]
